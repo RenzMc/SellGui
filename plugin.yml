@@ -1,0 +1,16 @@
+name: SellGUI
+version: 1.0.0
+author: Renz
+api: 5.0.0
+main: Renz\Main
+
+commands:
+  sellgui:
+    description: Open menu selling
+    aliases: [sellmenu]
+    permission: sellgui.command
+
+permissions:
+  sellgui.command:
+    description: Allow player to use the /sellgui command
+    default: true
