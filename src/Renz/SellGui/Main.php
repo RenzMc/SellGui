@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Renz\SellGui;
 
-use pocketmine\command\Command;
-use pocketmine\command\CommandSender;
 use pocketmine\plugin\PluginBase;
-use pocketmine\player\Player;
 use pocketmine\utils\TextFormat as TF;
 use Renz\SellGui\commands\SellGUICommand;
 use Renz\SellGui\libs\InvMenu\InvMenuHandler;
@@ -15,12 +12,18 @@ use Renz\SellGui\utils\SellManager;
 
 class Main extends PluginBase {
     /** @var SellManager */
-    private $sellManager;
+    private SellManager $sellManager;
 
+    /**
+     * Called when the plugin is loaded
+     */
     public function onLoad(): void {
         $this->getLogger()->info(TF::WHITE . "SellGUI is loading...");
     }
 
+    /**
+     * Called when the plugin is enabled
+     */
     public function onEnable(): void {
         // Save default resources
         $this->saveDefaultConfig();
@@ -41,6 +44,9 @@ class Main extends PluginBase {
         $this->getLogger()->info(TF::GREEN . "SellGUI has been enabled!");
     }
 
+    /**
+     * Called when the plugin is disabled
+     */
     public function onDisable(): void {
         $this->getLogger()->info(TF::RED . "SellGUI has been disabled!");
     }
@@ -48,7 +54,7 @@ class Main extends PluginBase {
     /**
      * Get the SellManager instance
      * 
-     * @return SellManager
+     * @return SellManager The SellManager instance
      */
     public function getSellManager(): SellManager {
         return $this->sellManager;

@@ -4,10 +4,11 @@ api: 5.0.0
 main: Renz\SellGui\Main
 author: Renz
 description: A GUI plugin for selling items with integrated SellAll functionality
+
 permissions:
   sellgui.command:
-    description: Allow player to use the /sellgui command
+    description: "Allow player to use the /sellgui command"
     default: true
   sellgui.reload:
+    description: "Allows reloading the plugin configuration"
     default: op
-    description: "Reloads the plugin"
