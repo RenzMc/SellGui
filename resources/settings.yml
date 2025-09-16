@@ -1,0 +1,10 @@
+###█▀▀ █▀▀ █░░ █░░ █▀▀█ █░░ █░░
+##▀▀█ █▀▀ █░░ █░░ █▄▄█ █░░ █░░
+#▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀ ▀░░▀ ▀▀▀ ▀▀▀
+#DO NOT CHANGE
+cfgversion: 1.3
+# SETTINGS
+
+# Economy Provider 
+# Supported: EconomyAPI, BedrockEconomy 
+economy.provider: EconomyAPI
