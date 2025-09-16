@@ -52,4 +52,4 @@ This file contains plugin settings, including the economy provider.
 
 ## License
 
-This plugin is licensed under the MIT License.
+This plugin is licensed under the MIT Licenses.
